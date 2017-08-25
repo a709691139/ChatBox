@@ -21,3 +21,4 @@ npm start
 
 打开 浏览器 
 http://localhost:3000
+http://localhost:3000/#/staff
