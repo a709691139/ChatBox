@@ -1,0 +1,31 @@
+.components.RoomManager{
+	width: 230px;
+	overflow-x: hidden;
+	overflow-y:auto;
+	float:left;
+	height:100%;
+	background:#E4E4E6;
+	.RoomRowBox{
+		height:55px;
+		padding: 8px 0;
+    font-size: 14px;
+    &:hover{
+    	background:#DEDCDB;
+    }
+    &.focus{
+    	background-color: #C5C5C6;
+    }
+    p{}
+    .newMessagePoint{
+    	background:#FF3B30;
+    	border-radius: 50%;
+	    color: #fff;
+      display: inline-block;
+      min-width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      text-align: center;
+    }
+	}
+}

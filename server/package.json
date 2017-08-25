@@ -1,0 +1,17 @@
+{
+  "name": "ChatOnline",
+  "description": "a realtime chat web application",
+  "version": "0.1.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "3.4.x",
+    "socket.io": "^2.0.3"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "scripts": {
+    "start": "node --harmony index.js"
+  }
+}

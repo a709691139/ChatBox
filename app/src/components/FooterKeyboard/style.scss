@@ -1,0 +1,80 @@
+.components.FooterKeyboard{
+	width:100%;
+	background:#F5F5F5;
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,.04),0 -2px 0 0 rgba(0,0,0,.01);
+    padding:13px 25px;
+    &.focus{
+    	background:#fff;
+    }
+    .btns{
+    	margin-bottom: 10px;
+    	line-height: 20px;
+    	.icon{
+    		font-size: 20px;
+    		color:#7C7C7C;
+    		cursor: pointer;
+    		width: 30px;
+    		text-align: center;
+    		display:inline-block;
+    		&:hover{
+    			color:#129611;
+    		}
+    		&.sendImage{
+    			position:relative;
+    			input{
+    				display:block;
+    				position:absolute;
+    				font-size:0;
+    				left:0;
+    				top:0;
+    				width:100%;
+    				background:transparent;
+    				height:100%;
+				    opacity: 0;
+				    cursor:pointer;
+				    filter:alpha(opacity=0); 
+				    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+				    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);  
+				    :hover{
+				    	cursor:pointer;
+				    }
+    			}
+    		}
+    	}
+    }
+	textarea{
+		display: block;
+	    width: 100%;
+	    height: 1.5rem;
+	    min-height: 50px;
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	    resize: none;
+	    outline: 0;
+	    background-color: transparent;
+	    border: 0;
+	    word-break: break-all;
+	    font-size: 13px;
+	    -webkit-appearance: none;
+	}
+	.submit{
+		margin-top: 3px;
+		width:65px;
+		height:25px;
+		line-height: 25px;
+		padding:0;
+		border:1px solid #E1E1E1;
+		background: #F5F5F5;
+		outline:none;
+		color:#606060;
+		// transition:all 0.3s;
+		border-radius: 3px;
+		float:right;
+		cursor: pointer;
+		&:hover{
+			background:#129611;
+			color:#fff;
+			border-color: #129611;
+		}
+	}
+}

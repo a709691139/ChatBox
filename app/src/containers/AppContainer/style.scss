@@ -1,0 +1,241 @@
+
+.swap-enter {
+  opacity: 0.01;
+  transform: translateX(7em);
+  transition: all .5s ease-in;
+  position:absolute;
+  width:100%;
+  top:0;
+}
+
+.swap-enter.swap-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.swap-leave {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all .5s ease-in;
+}
+
+.swap-leave.swap-leave-active {
+  opacity: 0;
+  transform: translateX(-7em);
+}
+
+.example-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+}
+
+.example-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0;
+}
+
+$imageUrl: "./HeaderAnnounce/";
+
+.pageContainer{
+  position: relative;
+  width:100%;
+  height:100%;
+  //background: url($imageUrl+"assets/notice.png");
+  $HeaderAnnounceHeight:40px;
+  .HeaderAnnounce{
+    padding-left: 1.9%;
+    height:$HeaderAnnounceHeight;
+    font-size: 14px;
+    .floatLeft{
+      float:left;
+    }
+    .leftBlock{
+      float:left;
+      p{
+        padding-top: 11px;
+        float: left;
+        font-size: 14px;
+        color: #333;
+        img{
+          float: left;
+          margin-right: 5px;
+        }
+      }
+    }
+    .rightBlock{
+      float:left;
+      width:90%;
+      height:100%;
+      margin-left: 1%;
+      .innerBox{
+        height:$HeaderAnnounceHeight;
+        width:100%!important;
+        a{
+          color:#000;
+          display: block;
+          width:100%;
+          height:$HeaderAnnounceHeight;
+          line-height: $HeaderAnnounceHeight;
+        }
+      }
+      .ant-carousel{
+        height:100%;
+        .slick-slider{
+          height:100%;
+          .slick-list{
+            height:100%;
+            .slick-track{
+              .slick-slide{
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .headerRow2{
+    height: 120px;
+    background: #ff9c35;
+    .logo{
+      padding-top: 15px;
+      float: left;
+      width: 15.5%;
+      padding-left: 1.9%;
+      a{
+        img{
+        }
+      }
+    }
+    .NavList{
+      float: left;
+      width: 65%;
+      padding-left: 2.18%;
+      .nav{
+        &>li{
+          float:left;
+          padding-top:20px;
+          position:relative;
+          text-align:center;
+          width:15%;
+          height:120px;
+          border-right:1px solid #fff;  
+          &:hover{
+            background:#ff8200;
+            ul{
+              display:block;
+            }
+          }
+          img{
+            width:auto;
+            height:39px;
+          }
+          p{
+            padding-top:15px;
+            a{
+              font-size:18px;
+              color:#fff;
+            }
+          }
+          ul{
+            display:none;
+            padding:2% 2% 4% 2%;
+            position:absolute;
+            width:100%;
+            top:120px;
+            background:#ff9c35;
+            z-index:1000;
+            li{
+              border:1px solid #fff;
+              width:100%;
+              height:40px;
+              margin-top:5px;
+              text-align:center;
+              padding-top:10px;
+            }
+            li a{
+              font-size:14px;
+              color:#fff;
+            }
+            li:hover{
+              background:#ff3434;
+            }
+          }
+        }
+      }
+    }
+    .UserBox{
+      padding-top:15px;
+      width:19.27%;
+      float:right;
+      p{
+        font-size:14px;
+        color:#fff;
+        margin-bottom:5px;
+        a{
+          font-size:14px;
+          color:#fff;
+          margin-left:10px;
+        }
+      }
+      .classify{
+        padding-top:15px;
+        a{
+          padding:5px 10px;
+          background:#ff3434;
+          border-radius:5px;
+          font-size:14px;
+          color:#fff;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .bottomContainer{
+    .leftNav{
+      float:left;
+      width:15.5%;
+    }
+    .mainContainer{
+      float:left;
+      width:74.5%;
+    }
+  }
+}
+
+
+@media screen and (max-width:1800px){
+  .pageContainer{
+    .headerRow2{
+      .logo{
+        padding-top:15px;
+        img{
+          width:207px;
+          height:auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1400px){
+  .pageContainer{
+    .headerRow2{
+      .logo{
+        padding-top:25px;
+        img{
+          width:180px;
+          height:auto;
+        }
+      }
+    }
+  }
+}
